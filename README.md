@@ -1,0 +1,2 @@
+# FourSquare-Venue-Search-Function
+I created this function for use with FourSquare API Venue's Search.  I designed it to loop through each neighborhood to retrieve multiple venues for each one of the neighborhoods.  I did this because I was having difficulties dealing with the missing values in the JSON file. So in this loop function, I coded some instructions to deal with the missing values. NOTE: I designed this function for academic purposes only. Check API time rate before use.
