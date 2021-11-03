@@ -1,11 +1,11 @@
-def venue_search(HOOD, LAT, LNG, CLIENT_ID, CLIENT_SECRET, VERSION, LIMIT, RADIUS):
+def venue_search(HOOD, LAT, LNG, CLIENT_ID, CLIENT_SECRET, VERSION, RADIUS, LIMIT):
 
     global venues_df1
 
     venues_list1 = []
     
     for hood1, lat1, lng1 in zip(HOOD, LAT, LNG):
-        url1 ='https://api.foursquare.com/v2/venues/search?client_id={}&client_secret={}&v={}&limit={}&radius={}&ll={},{}'.format(CLIENT_ID, CLIENT_SECRET, VERSION, LIMIT, RADIUS, lat1, lng1)
+        url1 ='https://api.foursquare.com/v2/venues/search?client_id={}&client_secret={}&v={}&limit={}&radius={}&ll={},{}'.format(CLIENT_ID, CLIENT_SECRET, VERSION, RADIUS, LIMIT, lat1, lng1)
         request1 = requests.get(url1).json()
         results1 = request1['response']['venues']
   
